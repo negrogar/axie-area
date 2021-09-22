@@ -6,7 +6,8 @@
         "class": "Aquatic",
         "dmg": "0",
         "shield": "115",
-        "buff":"Disable critical strikes on this Axie during this round.",
+        "buff":"1",
+        "condition":"1",
         "part":"back",
         "img":"./img/aquatic-back.png"
     },
@@ -17,7 +18,8 @@
         "class": "Aquatic",
         "dmg": "120",
         "shield": "30",
-        "buff":"Draw a card if target is in Last Stand.",
+        "buff":"1",
+        "condition":"1",
         "part":"back",
         "img":"./img/aquatic-back.png"
     },
@@ -28,7 +30,8 @@
         "class": "Aquatic",
         "dmg": "110",
         "shield": "20",
-        "buff":"Apply Speed+ to this Axie for 2 rounds when attacked.",
+        "buff":"1",
+        "condition":"1",
         "part":"back",
         "img":"./img/aquatic-back.png"
     },
@@ -39,7 +42,8 @@
         "class": "Aquatic",
         "dmg": "60",
         "shield": "90",
-        "buff":"Apply Attack+ to this Axie if its shield breaks.",
+        "buff":"1.2",
+        "condition":"shieldBreaks",
         "part":"back",
         "img":"./img/aquatic-back.png"
     },
@@ -50,7 +54,8 @@
         "class": "Aquatic",
         "dmg": "80",
         "shield": "40",
-        "buff":"Successful attacks restore 50 HP for each Anemone part this Axie posseses.",
+        "buff":"1",
+        "condition":"1",
         "part":"back",
         "img":"./img/aquatic-back.png"
     },
@@ -61,7 +66,8 @@
         "class": "Aquatic",
         "dmg": "100",
         "shield": "20",
-        "buff":"Prioritize idle target when comboed with at least 2 additional cards.",
+        "buff":"1",
+        "condition":"1",
         "part":"back",
         "img":"./img/aquatic-back.png"
     },
@@ -72,7 +78,8 @@
         "class": "Aquatic",
         "dmg": "100",
         "shield": "50",
-        "buff":"Deal 130% damage when attacking an idle target.",
+        "buff":"1.3",
+        "condition":"idle",
         "part":"horn",
         "img":"./img/aquatic-horn.png"
     },
@@ -83,7 +90,8 @@
         "class": "Aquatic",
         "dmg": "50",
         "shield": "80",
-        "buff":"Add 30% to this Axie's shield when attacking.",
+        "buff":"1",
+        "condition":"1",
         "part":"horn",
         "img":"./img/aquatic-horn.png"
     },
@@ -94,7 +102,8 @@
         "class": "Aquatic",
         "dmg": "110",
         "shield": "40",
-        "buff":"Apply Attack+ to this Axie when attacking Beast, Bug, or Mech targets.",
+        "buff":"1.2",
+        "condition":"bbm",
         "part":"horn",
         "img":"./img/aquatic-horn.png"
     },
@@ -105,7 +114,8 @@
         "class": "Aquatic",
         "dmg": "80",
         "shield": "40",
-        "buff":"Successful attacks restore 50 HP for each Anemone part this Axie posseses.",
+        "buff":"1",
+        "condition":"1",
         "part":"horn",
         "img":"./img/aquatic-horn.png"
     },   
@@ -116,7 +126,8 @@
         "class": "Aquatic",
         "dmg": "120",
         "shield": "30",
-        "buff":"End target's Last Stand.",
+        "buff":"1",
+        "condition":"1",
         "part":"horn",
         "img":"./img/aquatic-horn.png"
     },
@@ -127,7 +138,8 @@
         "class": "Aquatic",
         "dmg": "115",
         "shield": "10",
-        "buff":"Target cannot enter Last Stand if this card brings its HP to zero.",
+        "buff":"1",
+        "condition":"1",
         "part":"horn",
         "img":"./img/aquatic-horn.png"
     },
@@ -138,7 +150,8 @@
         "class": "Aquatic",
         "dmg": "110",
         "shield": "40",
-        "buff":"Deal 120% damage if this Axie's HP is below 50%.",
+        "buff":"1.2",
+        "condition":"below50",
         "part":"mouth",
         "img":"./img/aquatic-mouth.png"
     },
@@ -149,7 +162,8 @@
         "class": "Aquatic",
         "dmg": "80",
         "shield": "30",
-        "buff":"Heal this Axie by the damage inflicted with this card.",
+        "buff":"1",
+        "condition":"1",
         "part":"mouth",
         "img":"./img/aquatic-mouth.png"
     },
@@ -160,7 +174,8 @@
         "class": "Aquatic",
         "dmg": "110",
         "shield": "30",
-        "buff":"Apply Attack+ to this Axie when attacking Plant, Reptile, or Dusk targets.",
+        "buff":"1.2",
+        "condition":"prd",
         "part":"mouth",
         "img":"./img/aquatic-mouth.png"
     },
@@ -171,7 +186,8 @@
         "class": "Aquatic",
         "dmg": "130",
         "shield": "20",
-        "buff":"Target injured enemy if this Axie's HP is below 50%.",
+        "buff":"1",
+        "condition":"1",
         "part":"mouth",
         "img":"./img/aquatic-mouth.png"
     },
@@ -182,7 +198,8 @@
         "class": "Aquatic",
         "dmg": "110",
         "shield": "30",
-        "buff":"Apply Speed+ to this Axie for 2 rounds when comboed with another Aquatic class card.",
+        "buff":"1",
+        "condition":"1",
         "part":"tail",
         "img":"./img/aquatic-tail.png"
     },
@@ -193,7 +210,8 @@
         "class": "Aquatic",
         "dmg": "30",
         "shield": "0",
-        "buff":"Gain 1 energy when comboed with another card.",
+        "buff":"1",
+        "condition":"1",
         "part":"tail",
         "img":"./img/aquatic-tail.png"
     },
@@ -204,7 +222,8 @@
         "class": "Aquatic",
         "dmg": "100",
         "shield": "40",
-        "buff":"Apply Jinx to target for 2 rounds.",
+        "buff":"1",
+        "condition":"1",
         "part":"tail",
         "img":"./img/aquatic-tail.png"
     },
@@ -215,7 +234,8 @@
         "class": "Aquatic",
         "dmg": "110",
         "shield": "30",
-        "buff":"Apply Chill to target for 2 rounds.",
+        "buff":"1",
+        "condition":"1",
         "part":"tail",
         "img":"./img/aquatic-tail.png"
     },
@@ -226,7 +246,8 @@
         "class": "Aquatic",
         "dmg": "100",
         "shield": "40",
-        "buff":"Deal 120% damage if this Axie attacks first.",
+        "buff":"1.2",
+        "condition":"FirstAttack",
         "part":"tail",
         "img":"./img/aquatic-tail.png"
     },
@@ -237,7 +258,8 @@
         "class": "Aquatic",
         "dmg": "30",
         "shield": "30",
-        "buff":"Prioritizes furthest target.",
+        "buff":"1",
+        "condition":"1",
         "part":"tail",
         "img":"./img/aquatic-tail.png"
     },
@@ -248,7 +270,8 @@
         "class": "Beast",
         "dmg": "75",
         "shield": "0",
-        "buff":"Guaranteed critical strike when comboed with at least 2 other cards.",
+        "buff":"2.0",
+        "condition":"Combo2",
         "part":"back",
         "img":"./img/beast-back.png"
     },
@@ -259,7 +282,8 @@
         "class": "Beast",
         "dmg": "50",
         "shield": "0",
-        "buff":"Draw a card when attacking an Aquatic, Bird, or Dawn target.",
+        "buff":"1",
+        "condition":"1",
         "part":"back",
         "img":"./img/beast-back.png"
     },
@@ -270,7 +294,8 @@
         "class": "Beast",
         "dmg": "115",
         "shield": "35",
-        "buff":"Always strike first if this Axie is in Last Stand.",
+        "buff":"1",
+        "condition":"1",
         "part":"back",
         "img":"./img/beast-back.png"
     },
@@ -281,7 +306,8 @@
         "class": "Beast",
         "dmg": "125",
         "shield": "25",
-        "buff":"Deal 150% damage if this Axie is in Last Stand.",
+        "buff":"1.5.",
+        "condition":"LastStand",
         "part":"back",
         "img":"./img/beast-back.png"
     },    
@@ -292,7 +318,8 @@
         "class": "Beast",
         "dmg": "50",
         "shield": "100",
-        "buff":"Add Shield equal to the damage this cards deals to Plant targets.",
+        "buff":"1",
+        "condition":"1",
         "part":"back",
         "img":"./img/beast-back.png"
     },
@@ -303,7 +330,8 @@
         "class": "Beast",
         "dmg": "40",
         "shield": "30",
-        "buff":"Strike 3 times.",
+        "buff":"x3",
+        "condition":"1",
         "part":"back",
         "img":"./img/beast-back.png"
     },
@@ -314,7 +342,8 @@
         "class": "Beast",
         "dmg": "125",
         "shield": "25",
-        "buff":"Increase crit chance by 20% if chained or comboed with a plant card.",
+        "buff":"1",
+        "condition":"1",
         "part":"horn",
         "img":"./img/beast-horn.png"
     },
@@ -325,7 +354,8 @@
         "class": "Beast",
         "dmg": "70",
         "shield": "20",
-        "buff":"",
+        "buff":"1",
+        "condition":"1",
         "part":"horn",
         "img":"./img/beast-horn.png"
     },
@@ -336,7 +366,8 @@
         "class": "Beast",
         "dmg": "65",
         "shield": "85",
-        "buff":"",
+        "buff":"1",
+        "condition":"1",
         "part":"horn",
         "img":"./img/beast-horn.png"
     },
@@ -348,6 +379,7 @@
         "dmg": "120",
         "shield": "20",
         "buff":"1.1",
+        "condition":"AlliedBug",
         "part":"horn",
         "img":"./img/beast-horn.png"
     },
@@ -359,6 +391,7 @@
         "dmg": "130",
         "shield": "20",
         "buff":"2.5",
+        "condition":"CriticalStrike",
         "part":"horn",
         "img":"./img/beast-horn.png"
     },
@@ -370,6 +403,7 @@
         "dmg": "100",
         "shield": "50",
         "buff":"1",
+        "condition":"1",
         "part":"horn",
         "img":"./img/beast-horn.png"
     },
@@ -381,6 +415,7 @@
         "dmg": "105",
         "shield": "30",
         "buff":"1.2",
+        "condition":"Nut Combo",
         "part":"mouth",
         "img":"./img/beast-mouth.png"
     },
@@ -392,6 +427,7 @@
         "dmg": "80",
         "shield": "40",
         "buff":"1",
+        "condition":"1",
         "part":"mouth",
         "img":"./img/beast-mouth.png"
     },
@@ -402,7 +438,8 @@
         "class": "Beast",
         "dmg": "90",
         "shield": "30",
-        "buff":"lethal prox",
+        "buff":"2",
+        "condition":"below30Next",
         "part":"mouth",
         "img":"./img/beast-mouth.png"
     },
@@ -414,6 +451,7 @@
         "dmg": "0",
         "shield": "30",
         "buff":"1",
+        "condition":"1",
         "part":"mouth",
         "img":"./img/beast-mouth.png"
     },
@@ -425,6 +463,7 @@
         "dmg": "0",
         "shield": "0",
         "buff":"1",
+        "condition":"1",
         "part":"tail",
         "img":"./img/beast-tail.png"
     },
@@ -436,6 +475,7 @@
         "dmg": "80",
         "shield": "10",
         "buff":"1",
+        "condition":"1",
         "part":"tail",
         "img":"./img/beast-tail.png"
     },
@@ -447,6 +487,7 @@
         "dmg": "110",
         "shield": "40",
         "buff":"1",
+        "condition":"1",
         "part":"tail",
         "img":"./img/beast-tail.png"
     },
@@ -458,6 +499,7 @@
         "dmg": "120",
         "shield": "30",
         "buff":"1",
+        "condition":"1",
         "part":"tail",
         "img":"./img/beast-tail.png"
     },
@@ -469,6 +511,7 @@
         "dmg": "105",
         "shield": "30",
         "buff":"1.2",
+        "condition":"NutCombo",
         "part":"tail",
         "img":"./img/beast-tail.png"
     },
@@ -479,7 +522,8 @@
         "class": "Beast",
         "dmg": "40",
         "shield": "20",
-        "buff":"1.2",
+        "buff":"1",
+        "condition":"1",
         "part":"tail",
         "img":"./img/beast-tail.png"
     },
@@ -491,6 +535,7 @@
         "dmg": "60",
         "shield": "80",
         "buff":"1",
+        "condition":"1",
         "part":"back",
         "img":"./img/plant-back.png"
     },
@@ -502,6 +547,7 @@
         "dmg": "0",
         "shield": "40",
         "buff":"1",
+        "condition":"1",
         "part":"back",
         "img":"./img/plant-back.png"
     },
@@ -513,6 +559,7 @@
         "dmg": "0",
         "shield": "50",
         "buff":"1",
+        "condition":"1",
         "part":"back",
         "img":"./img/plant-back.png"
     },
@@ -524,6 +571,7 @@
         "dmg": "45",
         "shield": "80",
         "buff":"1",
+        "condition":"1",
         "part":"back",
         "img":"./img/plant-back.png"
     },
@@ -535,6 +583,7 @@
         "dmg": "0",
         "shield": "50",
         "buff":"1",
+        "condition":"1",
         "part":"back",
         "img":"./img/plant-back.png"
     },
@@ -546,6 +595,7 @@
         "dmg": "0",
         "shield": "110",
         "buff":"1",
+        "condition":"1",
         "part":"back",
         "img":"./img/plant-back.png"
     },
@@ -557,6 +607,7 @@
         "dmg": "80",
         "shield": "70",
         "buff":"1.2",
+        "condition":"PlantChain",
         "part":"horn",
         "img":"./img/plant-horn.png"
     },
@@ -568,6 +619,7 @@
         "dmg": "105",
         "shield": "40",
         "buff":"1.2",
+        "condition":"ShieldBreaks",
         "part":"horn",
         "img":"./img/plant-horn.png"
     },
@@ -579,6 +631,7 @@
         "dmg": "0",
         "shield": "40",
         "buff":"1",
+        "condition":"1",
         "part":"horn",
         "img":"./img/plant-horn.png"
     },
@@ -590,6 +643,7 @@
         "dmg": "0",
         "shield": "0",
         "buff":"1",
+        "condition":"1",
         "part":"horn",
         "img":"./img/plant-horn.png"
     },
@@ -601,6 +655,7 @@
         "dmg": "110",
         "shield": "20",
         "buff":"1.2",
+        "condition":"AttacksLast",
         "part":"horn",
         "img":"./img/plant-horn.png"
     },
@@ -612,6 +667,7 @@
         "dmg": "30",
         "shield": "50",
         "buff":"1",
+        "condition":"1",
         "part":"horn",
         "img":"./img/plant-horn.png"
     },
@@ -623,6 +679,7 @@
         "dmg": "30",
         "shield": "30",
         "buff":"1",
+        "condition":"1",
         "part":"mouth",
         "img":"./img/plant-mouth.png"
     },
@@ -634,6 +691,7 @@
         "dmg": "60",
         "shield": "60",
         "buff":"1",
+        "condition":"1",
         "part":"mouth",
         "img":"./img/plant-mouth.png"
     },
@@ -645,6 +703,7 @@
         "dmg": "75",
         "shield": "75",
         "buff":"1",
+        "condition":"1",
         "part":"mouth",
         "img":"./img/plant-mouth.png"
     },
@@ -656,6 +715,7 @@
         "dmg": "0",
         "shield": "40",
         "buff":"1",
+        "condition":"1",
         "part":"mouth",
         "img":"./img/plant-mouth.png"
     },
@@ -667,6 +727,7 @@
         "dmg": "70",
         "shield": "40",
         "buff":"1",
+        "condition":"1",
         "part":"tail",
         "img":"./img/plant-tail.png"
     },
@@ -678,6 +739,7 @@
         "dmg": "20",
         "shield": "30",
         "buff":"1",
+        "condition":"1",
         "part":"tail",
         "img":"./img/plant-tail.png"
     },
@@ -689,6 +751,7 @@
         "dmg": "60",
         "shield": "80",
         "buff":"1",
+        "condition":"1",
         "part":"tail",
         "img":"./img/plant-tail.png"
     },
@@ -700,6 +763,7 @@
         "dmg": "30",
         "shield": "20",
         "buff":"1",
+        "condition":"1",
         "part":"tail",
         "img":"./img/plant-tail.png"
     },
@@ -711,6 +775,7 @@
         "dmg": "70",
         "shield": "80",
         "buff":"1",
+        "condition":"1",
         "part":"tail",
         "img":"./img/plant-tail.png"
     },
@@ -722,6 +787,7 @@
         "dmg": "90",
         "shield": "50",
         "buff":"1",
+        "condition":"1",
         "part":"tail",
         "img":"./img/plant-tail.png"
     },
@@ -733,6 +799,7 @@
     "dmg":"110",
     "shield":"20",
     "buff":"1.2",
+    "condition":"FirstAttack",
     "part":"tail",
     "img":"./img/bird-tail.png"
 },
@@ -744,6 +811,7 @@
     "dmg":"40",
     "shield":"90",
     "buff":"1",
+    "condition":"1",
     "part":"tail",
     "img":"./img/bird-tail.png"
 },
@@ -754,7 +822,8 @@
     "class":"bird",
     "dmg":"150",
     "shield":"10",
-    "buff":"2 Attack -",
+    "buff":"0.6",
+    "condition":"NextAttack",
     "part":"tail",
     "img":"./img/bird-tail.png"
 },
@@ -766,6 +835,7 @@
     "dmg":"100",
     "shield":"50",
     "buff":"1",
+    "condition":"1",
     "part":"tail",
     "img":"./img/bird-tail.png"
 },
@@ -777,6 +847,7 @@
     "dmg":"120",
     "shield":"20",
     "buff":"1",
+    "condition":"1",
     "part":"tail",
     "img":"./img/bird-tail.png"
 },
@@ -788,6 +859,7 @@
     "dmg":"120",
     "shield":"0",
     "buff":"1",
+    "condition":"1",
     "part":"tail",
     "img":"./img/bird-tail.png"
 },
@@ -799,6 +871,7 @@
     "dmg":"40",
     "shield":"0",
     "buff":"1",
+    "condition":"1",
     "part":"back",
     "img":"./img/bird-back.png"
 },
@@ -810,6 +883,7 @@
     "dmg":"120",
     "shield":"20",
     "buff":"1",
+    "condition":"1",
     "part":"back",
     "img":"./img/bird-back.png"
 },
@@ -821,6 +895,7 @@
     "dmg":"110",
     "shield":"30",
     "buff":"1",
+    "condition":"1",
     "part":"back",
     "img":"./img/bird-back.png"
 },
@@ -832,6 +907,7 @@
     "dmg":"120",
     "shield":"10",
     "buff":"1",
+    "condition":"1",
     "part":"back",
     "img":"./img/bird-back.png"
 },
@@ -843,6 +919,7 @@
     "dmg":"130",
     "shield":"0",
     "buff":"1",
+    "condition":"1",
     "part":"back",
     "img":"./img/bird-back.png"
 },
@@ -853,7 +930,8 @@
     "class":"bird",
     "dmg":"35",
     "shield":"10",
-    "buff":"Attack Twice",
+    "buff":"x2",
+    "condition":"1",
     "part":"back",
     "img":"./img/bird-back.png"
 },
@@ -865,6 +943,7 @@
     "dmg":"80",
     "shield":"0",
     "buff":"1",
+    "condition":"1",
     "part":"mouth",
     "img":"./img/bird-mouth.png"
 },
@@ -876,6 +955,7 @@
     "dmg":"120",
     "shield":"30",
     "buff":"1",
+    "condition":"1",
     "part":"mouth",
     "img":"./img/bird-mouth.png"
 },
@@ -887,6 +967,7 @@
     "dmg":"110",
     "shield":"40",
     "buff":"1",
+    "condition":"1",
     "part":"mouth",
     "img":"./img/bird-mouth.png"
 },
@@ -898,6 +979,7 @@
     "dmg":"25",
     "shield":"0",
     "buff":"1",
+    "condition":"1",
     "part":"mouth",
     "img":"./img/bird-mouth.png"
 },
@@ -909,6 +991,7 @@
     "dmg":"120",
     "shield":"0",
     "buff":"1",
+    "condition":"1",
     "part":"horn",
     "img":"./img/bird-horn.png"
 },
@@ -919,7 +1002,8 @@
     "class":"bird",
     "dmg":"0",
     "shield":"40",
-    "buff":"Attack + 1 round",
+    "buff":"1.2",
+    "condition":"TwoRounds",
     "part":"horn",
     "img":"./img/bird-horn.png"
 },
@@ -931,6 +1015,7 @@
     "dmg":"120",
     "shield":"30",
     "buff":"1.2",
+    "condition":"Trump",
     "part":"horn",
     "img":"./img/bird-horn.png"
 },
@@ -942,6 +1027,7 @@
     "dmg":"130",
     "shield":"0",
     "buff":"1",
+    "condition":"1",
     "part":"horn",
     "img":"./img/bird-horn.png"
 },
@@ -953,6 +1039,7 @@
     "dmg":"50",
     "shield":"10",
     "buff":"1",
+    "condition":"1",
     "part":"horn",
     "img":"./img/bird-horn.png"
 },
@@ -964,6 +1051,7 @@
     "dmg":"110",
     "shield":"50",
     "buff":"1.2",
+    "condition":"LungeChain",
     "part":"horn",
     "img":"./img/bird-horn.png"
 },
@@ -975,6 +1063,7 @@
     "dmg":"30",
     "shield":"80",
     "buff":"1",
+    "condition":"1",
     "part":"tail",
     "img":"./img/bug-tail.png"
 },
@@ -985,7 +1074,8 @@
     "class":"bug",
     "dmg":"30",
     "shield":"0",
-    "buff":"Attack Twice",
+    "buff":"x2",
+    "condition":"Combo1",
     "part":"tail",
     "img":"./img/bug-tail.png"
 },
@@ -997,6 +1087,7 @@
     "dmg":"60",
     "shield":"80",
     "buff":"1",
+    "condition":"1",
     "part":"tail",
     "img":"./img/bug-tail.png"
 },
@@ -1007,7 +1098,8 @@
     "class":"bug",
     "dmg":"30",
     "shield":"40",
-    "buff":"",
+    "buff":"1",
+    "condition":"1",
     "part":"tail",
     "img":"./img/bug-tail.png"
 },
@@ -1019,6 +1111,7 @@
     "dmg":"60",
     "shield":"0",
     "buff":"2.0",
+    "condition":"LastStand",
     "part":"tail",
     "img":"./img/bug-tail.png"
 },
@@ -1030,6 +1123,7 @@
     "dmg":"105",
     "shield":"30",
     "buff":"1.3",
+    "condition":"Debuffed",
     "part":"tail",
     "img":"./img/bug-tail.png"
 },
@@ -1041,6 +1135,7 @@
     "dmg":"40",
     "shield":"60",
     "buff":"1",
+    "condition":"1",
     "part":"back",
     "img":"./img/bug-back.png"
 },
@@ -1052,6 +1147,7 @@
     "dmg":"100",
     "shield":"50",
     "buff":"1",
+    "condition":"1",
     "part":"back",
     "img":"./img/bug-back.png"
 },
@@ -1062,7 +1158,8 @@
     "class":"bug",
     "dmg":"100",
     "shield":"40",
-    "buff":"Attack -",
+    "buff":"1",
+    "condition":"1",
     "part":"back",
     "img":"./img/bug-back.png"
 },
@@ -1074,6 +1171,7 @@
     "dmg":"110",
     "shield":"50",
     "buff":"1.5",
+    "condition":"BugTarget",
     "part":"back",
     "img":"./img/bug-back.png"
 },
@@ -1085,6 +1183,7 @@
     "dmg":"110",
     "shield":"40",
     "buff":"1",
+    "condition":"1",
     "part":"back",
     "img":"./img/bug-back.png"
 },
@@ -1095,7 +1194,8 @@
     "class":"bug",
     "dmg":"10",
     "shield":"30",
-    "buff":"Fragile until next round",
+    "buff":"1",
+    "condition":"1",
     "part":"back",
     "img":"./img/bug-back.png"
 },
@@ -1107,6 +1207,7 @@
     "dmg":"70",
     "shield":"40",
     "buff":"1",
+    "condition":"1",
     "part":"mouth",
     "img":"./img/bug-mouth.png"
 },
@@ -1118,6 +1219,7 @@
     "dmg":"20",
     "shield":"0",
     "buff":"1",
+    "condition":"1",
     "part":"mouth",
     "img":"./img/bug-mouth.png"
 },
@@ -1129,6 +1231,7 @@
     "dmg":"120",
     "shield":"30",
     "buff":"1",
+    "condition":"1",
     "part":"mouth",
     "img":"./img/bug-mouth.png"
 },
@@ -1140,6 +1243,7 @@
     "dmg":"30",
     "shield":"0",
     "buff":"2.0",
+    "condition":"Combo1",
     "part":"mouth",
     "img":"./img/bug-mouth.png"
 },
@@ -1151,6 +1255,7 @@
     "dmg":"40",
     "shield":"0",
     "buff":"1",
+    "condition":"1",
     "part":"horn",
     "img":"./img/bug-horn.png"
 },
@@ -1162,6 +1267,7 @@
     "dmg":"80",
     "shield":"60",
     "buff":"1",
+    "condition":"1",
     "part":"horn",
     "img":"./img/bug-horn.png"
 },
@@ -1173,6 +1279,7 @@
     "dmg":"100",
     "shield":"50",
     "buff":"1",
+    "condition":"1",
     "part":"horn",
     "img":"./img/bug-horn.png"
 },
@@ -1184,6 +1291,7 @@
     "dmg":"110",
     "shield":"30",
     "buff":"1.3",
+    "condition":"VsShield",
     "part":"horn",
     "img":"./img/bug-horn.png"
 },
@@ -1195,6 +1303,7 @@
     "dmg":"80",
     "shield":"50",
     "buff":"1",
+    "condition":"1",
     "part":"horn",
     "img":"./img/bug-horn.png"
 },
@@ -1206,6 +1315,7 @@
     "dmg":"20",
     "shield":"20",
     "buff":"1",
+    "condition":"1",
     "part":"horn",
     "img":"./img/bug-horn.png"
 },
@@ -1217,6 +1327,7 @@
     "dmg":"90",
     "shield":"10",
     "buff":"1",
+    "condition":"1",
     "part":"tail",
     "img":"./img/reptile-tail.png"
 },
@@ -1228,6 +1339,7 @@
     "dmg":"90",
     "shield":"60",
     "buff":"1",
+    "condition":"1",
     "part":"tail",
     "img":"./img/reptile-tail.png"
 },
@@ -1239,6 +1351,7 @@
     "dmg":"80",
     "shield":"40",
     "buff":"1.5",
+    "condition":"AfterRound4",
     "part":"tail",
     "img":"./img/reptile-tail.png"
 },
@@ -1250,6 +1363,7 @@
     "dmg":"80",
     "shield":"20",
     "buff":"1",
+    "condition":"1",
     "part":"tail",
     "img":"./img/reptile-tail.png"
 },
@@ -1261,6 +1375,7 @@
     "dmg":"100",
     "shield":"55",
     "buff":"1",
+    "condition":"1",
     "part":"tail",
     "img":"./img/reptile-tail.png"
 },
@@ -1272,6 +1387,7 @@
     "dmg":"10",
     "shield":"20",
     "buff":"1",
+    "condition":"1",
     "part":"tail",
     "img":"./img/reptile-tail.png"
 },
@@ -1283,6 +1399,7 @@
     "dmg":"80",
     "shield":"80",
     "buff":"1",
+    "condition":"1",
     "part":"back",
     "img":"./img/reptile-back.png"
 },
@@ -1294,6 +1411,7 @@
     "dmg":"80",
     "shield":"50",
     "buff":"1",
+    "condition":"1",
     "part":"back",
     "img":"./img/reptile-back.png"
 },
@@ -1305,6 +1423,7 @@
     "dmg":"20",
     "shield":"30",
     "buff":"1",
+    "condition":"1",
     "part":"back",
     "img":"./img/reptile-back.png"
 },
@@ -1316,6 +1435,7 @@
     "dmg":"20",
     "shield":"80",
     "buff":"1",
+    "condition":"1",
     "part":"back",
     "img":"./img/reptile-back.png"
 },
@@ -1327,6 +1447,7 @@
     "dmg":"10",
     "shield":"135",
     "buff":"1",
+    "condition":"1",
     "part":"back",
     "img":"./img/reptile-back.png"
 },
@@ -1338,6 +1459,7 @@
     "dmg":"90",
     "shield":"60",
     "buff":"1",
+    "condition":"1",
     "part":"back",
     "img":"./img/reptile-back.png"
 },
@@ -1349,6 +1471,7 @@
     "dmg":"20",
     "shield":"40",
     "buff":"1",
+    "condition":"1",
     "part":"mouth",
     "img":"./img/reptile-mouth.png"
 },
@@ -1360,6 +1483,7 @@
     "dmg":"80",
     "shield":"20",
     "buff":"1",
+    "condition":"1",
     "part":"mouth",
     "img":"./img/reptile-mouth.png"
 },
@@ -1371,6 +1495,7 @@
     "dmg":"90",
     "shield":"50",
     "buff":"1",
+    "condition":"1",
     "part":"mouth",
     "img":"./img/reptile-mouth.png"
 },
@@ -1382,6 +1507,7 @@
     "dmg":"80",
     "shield":"50",
     "buff":"1",
+    "condition":"1",
     "part":"mouth",
     "img":"./img/reptile-mouth.png"
 },
@@ -1393,6 +1519,7 @@
     "dmg":"30",
     "shield":"80",
     "buff":"1",
+    "condition":"1",
     "part":"horn",
     "img":"./img/reptile-horn.png"
 },
@@ -1404,6 +1531,7 @@
     "dmg":"100",
     "shield":"50",
     "buff":"1.2",
+    "condition":"LungeChain",
     "part":"horn",
     "img":"./img/reptile-horn.png"
 },
@@ -1415,6 +1543,7 @@
     "dmg":"90",
     "shield":"60",
     "buff":"1.3",
+    "condition":"TargetIsFaster",
     "part":"horn",
     "img":"./img/reptile-horn.png"
 },
@@ -1425,7 +1554,8 @@
     "class":"reptile",
     "dmg":"80",
     "shield":"40",
-    "buff":"REFLECT 50% dmg",
+    "buff":"1",
+    "condition":"1",
     "part":"horn",
     "img":"./img/reptile-horn.png"
 },
@@ -1437,6 +1567,7 @@
     "dmg":"100",
     "shield":"40",
     "buff":"1",
+    "condition":"1",
     "part":"horn",
     "img":"./img/reptile-horn.png"
 },
@@ -1448,6 +1579,7 @@
     "dmg":"90",
     "shield":"30",
     "buff":"1",
+    "condition":"1",
     "part":"horn",
     "img":"./img/reptile-horn.png"
 }
