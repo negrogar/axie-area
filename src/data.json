@@ -8,7 +8,7 @@
         "shield": "115",
         "buff":"Disable critical strikes on this Axie during this round.",
         "part":"back",
-        "img":"./img/aquatic-back.png"
+        "img":"../img/aquatic-back.png"
     },
      {
         "id":"2",
