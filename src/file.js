@@ -18,8 +18,8 @@ function fullDamage(cards,axie){
     let card
     let cardCombo
     for (let i = 0; i < 4; i++) {
-        if(cards[i].class == "Plant" || cards[i].class == "Reptile"){
-            if(axie[5] == cards[i].class){
+        if(cards[i].type == "Plant" || cards[i].type == "Reptile"){
+            if(axie[5] == cards[i].type){
                 card = {
                     name: cards[i].name1,
                     dmg: {
@@ -71,8 +71,8 @@ function fullDamage(cards,axie){
                         }
                     }  
             }
-        }else if (cards[i].class == "Aquatic" || cards[i].class == "Bird"){
-            if(axie[5] == cards[i].class){
+        }else if (cards[i].type == "Aquatic" || cards[i].type == "Bird"){
+            if(axie[5] == cards[i].type){
                 card = {
                     name: cards[i].name1,
                     dmg: {
@@ -124,8 +124,8 @@ function fullDamage(cards,axie){
                     }
                 }  
             }
-        }else if (cards[i].class == "Beast" || cards[i].class == "Bug"){
-            if(axie[5] == cards[i].class){
+        }else if (cards[i].type == "Beast" || cards[i].type == "Bug"){
+            if(axie[5] == cards[i].type){
                 card = {
                     name: cards[i].name1,
                     dmg: {
@@ -195,30 +195,30 @@ function dealDamage(combo,stats){
         let cartaBuscada = axiesJson.find(fullCombo => fullCombo.name1 == combo[i]);
         fullCombo.push(cartaBuscada)
         if (combo.length >= 2) {
-            if(fullCombo[i].class == stats[2]){
-                if(fullCombo[i].class == "Plant" || fullCombo[i].class == "Reptile"){
+            if(fullCombo[i].type == stats[2]){
+                if(fullCombo[i].type == "Plant" || fullCombo[i].type == "Reptile"){
                     if(stats[1] ==  "Plant" || stats[1] ==  "Reptile" || stats[1] ==  "Dusk"){
-                        fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10 + (fullCombo[i].dmg * stats[0] / 500))
+                        Math.trunc(fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10 + (fullCombo[i].dmg * stats[0] / 500)))
                     }else if (stats[1] ==  "Aquatic" || stats[1] ==  "Bird" || stats[1] ==  "Dawn") {
-                        fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10 * 1.15 + (fullCombo[i].dmg * stats[0] / 500))
+                        Math.trunc(fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10 * 1.15 + (fullCombo[i].dmg * stats[0] / 500)))
                     }else{
-                        fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10 * 0.85 + (fullCombo[i].dmg * stats[0] / 500))
+                        Math.trunc(fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10 * 0.85 + (fullCombo[i].dmg * stats[0] / 500)))
                     }
-                }else if(fullCombo[i].class == "Aquatic" || fullCombo[i].class == "Bird"){
+                }else if(fullCombo[i].type == "Aquatic" || fullCombo[i].type == "Bird"){
                     if(stats[1] ==  "Plant" || stats[1] ==  "Reptile" || stats[1] ==  "Dusk"){
-                        fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10 * 0.85 + (fullCombo[i].dmg * stats[0] / 500))
+                        Math.trunc(fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10 * 0.85 + (fullCombo[i].dmg * stats[0] / 500)))
                     }else if (stats[1] ==  "Aquatic" || stats[1] ==  "Bird" || stats[1] ==  "Dawn") {
-                        fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10  + (fullCombo[i].dmg * stats[0] / 500))
+                        Math.trunc(fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10  + (fullCombo[i].dmg * stats[0] / 500)))
                     }else{
-                        fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10 * 1.15 + (fullCombo[i].dmg * stats[0] / 500))
+                        Math.trunc(fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10 * 1.15 + (fullCombo[i].dmg * stats[0] / 500)))
                     }
-                }else if(fullCombo[i].class == "Beast" || fullCombo[i].class == "Bug"){
+                }else if(fullCombo[i].type == "Beast" || fullCombo[i].type == "Bug"){
                     if(stats[1] ==  "Plant" || stats[1] ==  "Reptile" || stats[1] ==  "Dusk"){
-                        fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10 * 1.15 + (fullCombo[i].dmg * stats[0] / 500))
+                        Math.trunc(fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10 * 1.15 + (fullCombo[i].dmg * stats[0] / 500)))
                     }else if (stats[1] ==  "Aquatic" || stats[1] ==  "Bird" || stats[1] ==  "Dawn") {
-                        fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10 * 0.85 + (fullCombo[i].dmg * stats[0] / 500))
+                        Math.trunc(fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10 * 0.85 + (fullCombo[i].dmg * stats[0] / 500)))
                     }else{
-                        fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10 + (fullCombo[i].dmg * stats[0] / 500))
+                        Math.trunc(fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10 + (fullCombo[i].dmg * stats[0] / 500)))
                     }
                 }
             }else{
@@ -279,98 +279,93 @@ function dealDamage(combo,stats){
                 }
             }
         }else{
-                if(fullCombo[i].class == stats[2]){
-                    if(fullCombo[i].class == "Plant" || fullCombo[i].class == "Reptile"){
-                        if(stats[1] ==  "Plant" || stats[1] ==  "Reptile" || stats[1] ==  "Dusk"){
-                            fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10 + (fullCombo[i].dmg * stats[0] / 500))
-                        }else if (stats[1] ==  "Aquatic" || stats[1] ==  "Bird" || stats[1] ==  "Dawn") {
-                            fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10 * 1.15 + (fullCombo[i].dmg * stats[0] / 500))
-                        }else{
-                            fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10 * 0.85 + (fullCombo[i].dmg * stats[0] / 500))
-                        }
-                    }else if(fullCombo[i].class == "Aquatic" || fullCombo[i].class == "Bird"){
-                        if(stats[1] ==  "Plant" || stats[1] ==  "Reptile" || stats[1] ==  "Dusk"){
-                            fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10 * 0.85 + (fullCombo[i].dmg * stats[0] / 500))
-                        }else if (stats[1] ==  "Aquatic" || stats[1] ==  "Bird" || stats[1] ==  "Dawn") {
-                            fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10  + (fullCombo[i].dmg * stats[0] / 500))
-                        }else{
-                            fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10 * 1.15 + (fullCombo[i].dmg * stats[0] / 500))
-                        }
-                    }else if(fullCombo[i].class == "Beast" || fullCombo[i].class == "Bug"){
-                        if(stats[1] ==  "Plant" || stats[1] ==  "Reptile" || stats[1] ==  "Dusk"){
-                            fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10 * 1.15 + (fullCombo[i].dmg * stats[0] / 500))
-                        }else if (stats[1] ==  "Aquatic" || stats[1] ==  "Bird" || stats[1] ==  "Dawn") {
-                            fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10 * 0.85 + (fullCombo[i].dmg * stats[0] / 500))
-                        }else{
-                            fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10 + (fullCombo[i].dmg * stats[0] / 500))
-                        }
+            if(fullCombo[i].type == stats[2]){
+                if(fullCombo[i].type == "Plant" || fullCombo[i].type == "Reptile"){
+                    if(stats[1] ==  "Plant" || stats[1] ==  "Reptile" || stats[1] ==  "Dusk"){
+                        fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10)
+                    }else if (stats[1] ==  "Aquatic" || stats[1] ==  "Bird" || stats[1] ==  "Dawn") {
+                        fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10 * 1.15)
+                    }else{
+                        fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10 * 0.85)
                     }
+                }else if(fullCombo[i].type == "Aquatic" || fullCombo[i].type == "Bird"){
+                    if(stats[1] ==  "Plant" || stats[1] ==  "Reptile" || stats[1] ==  "Dusk"){
+                        fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10 * 0.85)
+                    }else if (stats[1] ==  "Aquatic" || stats[1] ==  "Bird" || stats[1] ==  "Dawn") {
+                        fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10)
+                    }else{
+                        fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10 * 1.15)
+                    }
+                }else if(fullCombo[i].type == "Beast" || fullCombo[i].type == "Bug"){
+                    if(stats[1] ==  "Plant" || stats[1] ==  "Reptile" || stats[1] ==  "Dusk"){
+                        fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10 * 1.15)
+                    }else if (stats[1] ==  "Aquatic" || stats[1] ==  "Bird" || stats[1] ==  "Dawn") {
+                        fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10 * 0.85)
+                    }else{
+                        fullDmg = fullDmg + (fullCombo[i].dmg  * 1.10)
+                    }
+                }
+            }else if(stats[2] == "Dusk"){
+                if(stats[1] ==  "Plant" || stats[1] ==  "Reptile" || stats[1] ==  "Dusk"){
+                    fullDmg = fullDmg + (fullCombo[i].dmg  * 1.075)
+                }else if (stats[1] ==  "Aquatic" || stats[1] ==  "Bird" || stats[1] ==  "Dawn") {
+                    fullDmg = fullDmg + (fullCombo[i].dmg  * 1.075 * 1.15)
                 }else{
-                    if(stats[2] == "Dusk" || stats[2] == "Reptile" || stats[2] == "Plant"){
-                        if(stats[2] == "Dusk"){
-                            if(stats[1] ==  "Plant" || stats[1] ==  "Reptile" || stats[1] ==  "Dusk"){
-                                fullDmg = fullDmg + (fullCombo[i].dmg  * 1.075 + (fullCombo[i].dmg * stats[0] / 500))
-                            }else if (stats[1] ==  "Aquatic" || stats[1] ==  "Bird" || stats[1] ==  "Dawn") {
-                                fullDmg = fullDmg + (fullCombo[i].dmg  * 1.075 * 1.15 + (fullCombo[i].dmg * stats[0] / 500))
-                            }else{
-                                fullDmg = fullDmg + (fullCombo[i].dmg  * 1.075 * 0.85 + (fullCombo[i].dmg * stats[0] / 500))
-                            } 
-                        }else{
-                            if(stats[1] ==  "Plant" || stats[1] ==  "Reptile" || stats[1] ==  "Dusk"){
-                                fullDmg = fullDmg + (fullCombo[i].dmg + (fullCombo[i].dmg * stats[0] / 500))
-                            }else if (stats[1] ==  "Aquatic" || stats[1] ==  "Bird" || stats[1] ==  "Dawn") {
-                                fullDmg = fullDmg + (fullCombo[i].dmg * 1.15 + (fullCombo[i].dmg * stats[0] / 500))
-                            }else{
-                                fullDmg = fullDmg + (fullCombo[i].dmg * 0.85 + (fullCombo[i].dmg * stats[0] / 500))
-                            } 
-                        }
-                    }else if (stats[2] == "Dawn" || stats[2] == "Aquatic" || stats[2] == "Bird"){
-                        if(stats[2] == "Dawn"){
-                            if(stats[1] ==  "Plant" || stats[1] ==  "Reptile" || stats[1] ==  "Dusk"){
-                                fullDmg = fullDmg + (fullCombo[i].dmg  * 1.075 * 0.85 + (fullCombo[i].dmg * stats[0] / 500))
-                            }else if (stats[1] ==  "Aquatic" || stats[1] ==  "Bird" || stats[1] ==  "Dawn") {
-                                fullDmg = fullDmg + (fullCombo[i].dmg  * 1.075  + (fullCombo[i].dmg * stats[0] / 500))
-                            }else{
-                                fullDmg = fullDmg + (fullCombo[i].dmg  * 1.075 * 1.15 + (fullCombo[i].dmg * stats[0] / 500))
-                            }
-                        }else{
-                            if(stats[1] ==  "Plant" || stats[1] ==  "Reptile" || stats[1] ==  "Dusk"){
-                                fullDmg = fullDmg + (fullCombo[i].dmg * 0.85 + (fullCombo[i].dmg * stats[0] / 500))
-                            }else if (stats[1] ==  "Aquatic" || stats[1] ==  "Bird" || stats[1] ==  "Dawn") {
-                                fullDmg = fullDmg + (fullCombo[i].dmg + (fullCombo[i].dmg * stats[0] / 500))
-                            }else{
-                                fullDmg = fullDmg + (fullCombo[i].dmg * 1.15 + (fullCombo[i].dmg * stats[0] / 500))
-                            }
-                        }
-                    }else if(stats[2] == "Mech" || stats[2] == "Beast" || stats[2] == "Bug"){
-                        if(stats[2] == "Mech"){
-                            if(stats[1] ==  "Plant" || stats[1] ==  "Reptile" || stats[1] ==  "Dusk"){
-                                fullDmg = fullDmg + (fullCombo[i].dmg  * 1.075 * 1.15 + (fullCombo[i].dmg * stats[0] / 500))
-                            }else if (stats[1] ==  "Aquatic" || stats[1] ==  "Bird" || stats[1] ==  "Dawn") {
-                                fullDmg = fullDmg + (fullCombo[i].dmg  * 1.075 * 0.85 + (fullCombo[i].dmg * stats[0] / 500))
-                            }else{
-                                fullDmg = fullDmg + (fullCombo[i].dmg  * 1.075 + (fullCombo[i].dmg * stats[0] / 500))
-                            }
-                        }else{
-                            if(stats[1] ==  "Plant" || stats[1] ==  "Reptile" || stats[1] ==  "Dusk"){
-                                fullDmg = fullDmg + (fullCombo[i].dmg * 1.15 + (fullCombo[i].dmg * stats[0] / 500))
-                            }else if (stats[1] ==  "Aquatic" || stats[1] ==  "Bird" || stats[1] ==  "Dawn") {
-                                fullDmg = fullDmg + (fullCombo[i].dmg * 0.85 + (fullCombo[i].dmg * stats[0] / 500))
-                            }else{
-                                fullDmg = fullDmg + (fullCombo[i].dmg + (fullCombo[i].dmg * stats[0] / 500))
-                            }
-                        }
+                    fullDmg = fullDmg + (fullCombo[i].dmg  * 1.075 * 0.85)
+                }
+            }else if(stats[2] == "Dawn"){
+                if(stats[1] ==  "Plant" || stats[1] ==  "Reptile" || stats[1] ==  "Dusk"){
+                    fullDmg = fullDmg + (fullCombo[i].dmg  * 1.075 * 0.85)
+                }else if (stats[1] ==  "Aquatic" || stats[1] ==  "Bird" || stats[1] ==  "Dawn") {
+                    fullDmg = fullDmg + (fullCombo[i].dmg  * 1.075)
+                }else{
+                    fullDmg = fullDmg + (fullCombo[i].dmg  * 1.075 * 1.15)
+                }
+            }else if (stats[2] == "Mech"){
+                if(stats[1] ==  "Plant" || stats[1] ==  "Reptile" || stats[1] ==  "Dusk"){
+                    fullDmg = fullDmg + (fullCombo[i].dmg  * 1.075 * 1.15)
+                }else if (stats[1] ==  "Aquatic" || stats[1] ==  "Bird" || stats[1] ==  "Dawn") {
+                    fullDmg = fullDmg + (fullCombo[i].dmg  * 1.075 * 0.85)
+                }else{
+                    fullDmg = fullDmg + (fullCombo[i].dmg  * 1.075)
+                }
+            }else{
+                if(fullCombo[i].type == "Reptile" || fullCombo[i].type == "Plant"){
+                    if(stats[1] ==  "Plant" || stats[1] ==  "Reptile" || stats[1] ==  "Dusk"){
+                        fullDmg = fullDmg + (fullCombo[i].dmg)
+                    }else if (stats[1] ==  "Aquatic" || stats[1] ==  "Bird" || stats[1] ==  "Dawn") {
+                        fullDmg = fullDmg + (fullCombo[i].dmg * 1.15)
+                    }else{
+                        fullDmg = fullDmg + (fullCombo[i].dmg * 0.85)
                     }
+                }else if(fullCombo[i].type == "Aquatic" || fullCombo [i].type == "Bird"){
+                    if(stats[1] ==  "Plant" || stats[1] ==  "Reptile" || stats[1] ==  "Dusk"){
+                        fullDmg = fullDmg + (fullCombo[i].dmg * 0.85)
+                    }else if (stats[1] ==  "Aquatic" || stats[1] ==  "Bird" || stats[1] ==  "Dawn") {
+                        fullDmg = fullDmg + (fullCombo[i].dmg )
+                    }else{
+                        fullDmg = fullDmg + (fullCombo[i].dmg * 1.15)
+                    }
+                }else if(fullCombo[i].type == "Beast" || fullCombo [i].type == "Bug"){
+                    if(stats[1] ==  "Plant" || stats[1] ==  "Reptile" || stats[1] ==  "Dusk"){
+                        fullDmg = fullDmg + (fullCombo[i].dmg * 1.15)
+                    }else if (stats[1] ==  "Aquatic" || stats[1] ==  "Bird" || stats[1] ==  "Dawn") {
+                        fullDmg = fullDmg + (fullCombo[i].dmg * 0.85)
+                    }else{
+                        fullDmg = fullDmg + (fullCombo[i].dmg)
+                    }
+                }
+            }
             }
         }
     console.log(fullDmg);
     /* console.log(fullCombo); */
 }
-}
+
 
 let axie = ["TURNIP","BLUE MOON","HERO","POST FIGHT",35, "Dawn"]
-let combo = ["BLUE MOON", "HERO", "POST FIGHT"]
-let stats = [35,"Beast","Reptile"]   
+let combo = ["EGGSHELL","EGGSHELL"]
+let stats = [35,"Bird","Bird"]   
 
 addCards(axie)
 fullDamage(cartas,axie)
